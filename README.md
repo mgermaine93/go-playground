@@ -58,3 +58,7 @@ Both go.mod and go.sum should be checked into version control.
 
 blog.golang.org = the go blog
 blog.golang.org/using-go-modules = good link to visit to learn about go modules.
+
+- Things to Review so far:
+  - Video #112 (Interfaces and Polymorphism)
+  - Hands-On Exercise #9, Level 6 (Callback functions)
