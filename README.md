@@ -65,3 +65,7 @@ blog.golang.org/using-go-modules = good link to visit to learn about go modules.
   * Video #138 (Writer Interface)
   * Wait Groups/Race Conditions
     - What exactly is a race condition besides "not good code"?
+  * Record instructional video of the above?
+    - Concurrency vs Parallelism
+    - GoRoutines
+    - Wait Groups/Race Conditions

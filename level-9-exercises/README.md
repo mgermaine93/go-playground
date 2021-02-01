@@ -41,3 +41,8 @@
   - The functions here require great care to be used correctly.
   - Except for special, low-level applications, synchronization is better done with channels or the facilities of the "sync" package.
   - "Share memory by communicating, don't communicate by sharing memory".
+
+* "Go run your_program_here" runs a program.
+* "Go build your_program_here" drops a program into a repo, from which you can run the program.
+* "rm \_\_\_ your_program_here" removes the program.
+* "Go install your_program_here" installs the program into your Go Path.
