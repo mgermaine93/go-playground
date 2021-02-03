@@ -1,0 +1,27 @@
+# Channels Notes
+
+- Channels are a higher-level way of synchronizing your code/writing concurrent code.
+- Channels allow us to pass values between Goroutines.
+  - The values are passed/received at the SAME TIME.
+- It is important to know that CHANNELS BLOCK.
+- "Buffered Channels" will only hold so many values before they block.
+- "Bidirectional Channels" are channels that can both send information and receive information.
+- "Range Loops" will "hang out" until the channel is closed.
+  - They enable you to RANGE OVER a CHANNEL.
+  - Range clauses, however, will also block, until the channel is closed.
+- Using Channels
+  - In functions, you can specify the following:
+    - Receive Channel
+      - You can receive values from the channel
+      - A receive channel parameter
+      - In the function, you can only pull values from the channel
+      - You can't close a receive channel
+    - Send Channel
+      - You can push values to the channel
+      - You can't receive/pull/read from the channel
+      - You can only push values to the channel
+- SELECT statements will pull values off of multiple channels when needed
+- The "comma-OK" idiom can be used to check whether or not a channel is closed
+- Fan Out/Fan In is another common design pattern
+  - "Fan In" takes values from many channels and puts those values onto a single channel.
+  - "Fan Out" takes some work and puts the chunks of work onto many GoRoutines
