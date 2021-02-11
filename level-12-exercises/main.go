@@ -1,8 +1,12 @@
 package main
 
+<<<<<<< HEAD
 import (
 	"fmt"
 )
+=======
+import "fmt"
+>>>>>>> ac6f976bbda516901b074cdb9eb4a1d157b85efc
 
 type doggo struct {
 	name  string
