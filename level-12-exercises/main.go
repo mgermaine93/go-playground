@@ -1,12 +1,9 @@
 package main
 
-<<<<<<< HEAD
 import (
+	"github.com/mgermaine93/learn-to-go/level-12-exercises/dog"
 	"fmt"
 )
-=======
-import "fmt"
->>>>>>> ac6f976bbda516901b074cdb9eb4a1d157b85efc
 
 type doggo struct {
 	name  string
@@ -15,10 +12,10 @@ type doggo struct {
 }
 
 func main() {
-	doggy := doggo{
+	benny := doggo{
 		name:  "Benny",
 		breed: "Beagle",
 		age:   dog.HumanYearsToDogYears(5),
 	}
-	fmt.Printf("%v the %v is %v dog years-old.\n", doggy.name, doggy.breed, doggy.age)
+	fmt.Printf("My favorite dog is %v the %v.  He is %v dog-years old.\n", benny.name, benny.breed, benny.age)
 }
