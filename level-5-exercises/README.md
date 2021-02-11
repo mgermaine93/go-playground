@@ -1,0 +1,45 @@
+# Problem Set #5 Notes
+
+- Go is all about type!
+- Go is somewhat object-oriented:
+  - Encapsulation:
+    - State ("fields")
+    - Behavior ("method")
+    - Exported/Unexported ("viewable"/"not viewable")
+  - Reusability:
+    - Inheritance ("embedded types")
+  - Polymorphism:
+    - Interfaces
+  - Overriding
+    - "Promotion"
+- Traditional OOP:
+  - Classes:
+    - Data structures describing a type of object.
+    - You can then create "instances"/"objects" from the class/blueprint.
+    - Classes hold both:
+      - State/data/fields.
+      - Behavior/Methods
+    - Public/Private
+  - Inheritance
+- In Go:
+  - You don't create classes, you create a TYPE.
+  - You don't instantiate, you create a VALUE of a TYPE.
+- It is bad practice to ALIAS types!
+  - One exception:
+    - If you need to attach methods to a type.
+    - See the "time" package for an example of this.
+      - type Duration int64
+      - Duration has methods attached to it.
+- Named types vs. Anonymous types:
+  - Anonymous types are indeterminate.
+  - They have not been declared as a type yet.
+  - The compiler has flexibility with anonymous types.
+  - You can assign an anonymous types to a variable declared as a certain type.
+  - If the assignment CAN occur, the compiler will figure it out.
+    - The compiler will do an implicit conversion.
+  - You CANNOT assign a named type to a different named type.
+- Padding and architectural alignment:
+  - Convention is to logically organize the fields together.
+  - Readability and clarity override performance as a design concern.
+  - Go will perform ... prioritize readability.
+  - In the event you need to prioritize performance, lay out the fields from largest to smallest in your struct (int64, float32, bool, etc.)
