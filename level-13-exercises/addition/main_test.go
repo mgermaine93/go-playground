@@ -1,16 +1,12 @@
-// First test writing attempt in Go...
+// // First test writing attempt in Go...
 
-package addition
+package main
 
 import "testing"
+func TestAddOneAndOne(t *testing.T) {
 
-// Test functions always need to 1) Be Capitalized, 2) Be passed "t *testing.T"
-func TestAndOneAndOne(t *testing.T) {
-
-	// actual := addOneAndOne()
-
-	// if actual != 2 {
-	// 	t.Errorf("Expected 2, but got %v", actual)
-	// }
-
+	result := addOneAndOne()
+	if result != 2 {
+		t.Error("Expected", 2, "Got", result)
+	}
 }
