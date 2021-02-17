@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/mgermaine93/learn-to-go/level-13-exercises/number-2/mymath"
+	"github.com/mgermaine93/learn-to-go/level-13-exercises/number-3/mymath"
 )
 
 func main() {
